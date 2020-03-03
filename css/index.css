@@ -1,1 +1,363 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* my code starts here */
+.title-font-style {
+  font-family: Caladea;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+.content-style {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 8vh;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.25%;
+  margin: 0 5%;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+}
+header nav a {
+  padding: 0 1%;
+  text-decoration: none;
+  font-family: Spartan;
+  color: black;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 2%;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 178vh;
+  height: 90vh;
+  margin: 0 5%;
+  padding: 2%;
+  font-family: Spartan;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  .intro {
+    align-items: center;
+    width: 90%;
+    height: 65%;
+    padding: 5%;
+    margin-top: 19%;
+  }
+}
+.intro img {
+  display: flex;
+  width: 25%;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .intro img {
+    margin-bottom: 2%;
+  }
+}
+.intro h1 {
+  font-size: 2rem;
+  font-family: Caladea;
+  margin-bottom: 2%;
+}
+.intro h3 {
+  font-size: 1rem;
+}
+.intro hr {
+  margin: 2% 0;
+}
+.intro p {
+  font-size: 0.9rem;
+  margin-bottom: 2%;
+}
+.intro button {
+  background-color: darkgrey;
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 13%;
+  height: 7%;
+  color: white;
+  font-weight: medium;
+  font-size: 0.9rem;
+}
+@media (max-width: 500px) {
+  .intro button {
+    width: 25%;
+    height: 15%;
+  }
+}
+.about-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5%;
+  height: 50vh;
+  padding: 2%;
+  font-family: Spartan;
+  font-size: 0.9rem;
+}
+@media (max-width: 500px) {
+  .about-skills {
+    flex-direction: column;
+    align-items: center;
+    height: 69%;
+  }
+}
+.about-skills .about {
+  width: 45%;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  .about-skills .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 2%;
+  }
+}
+.about-skills .about h3 {
+  font-family: Caladea;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+.about-skills .skills {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .about-skills .skills {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+}
+.about-skills .skills span {
+  font-family: Caladea;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+.about-skills table {
+  border: 1px solid yellow;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .about-skills table {
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+  }
+}
+.about-skills table td {
+  border: 1px solid darkgrey;
+  padding: 4%;
+}
+.work-history {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  padding: 2%;
+  font-family: Spartan;
+}
+@media (max-width: 500px) {
+  .work-history {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+    padding: 0%;
+  }
+}
+.work-history span {
+  font-family: Caladea;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+.work-history table {
+  font-size: 0.9rem;
+  border: 1px solid grey;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .work-history table {
+    width: 100%;
+  }
+}
+.work-history table th {
+  border: 1px solid darkgrey;
+  font-weight: bold;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .work-history table th {
+    padding: 2%;
+  }
+}
+.work-history table td {
+  border: 1px solid darkgrey;
+  padding: 1%;
+  padding: 3%;
+}
+footer {
+  border: 1px solid darkgrey;
+  display: flex;
+  height: 10vh;
+  background-color: darkgrey;
+  color: white;
+  font-family: Spartan;
+  justify-content: center;
+  margin: 2% 5% 0;
+  padding: 2%;
+  font-size: 0.75rem;
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 5%;
+  }
+}
