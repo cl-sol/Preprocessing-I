@@ -61,6 +61,11 @@ html, body {
 
 @resume-font: Spartan;
 @title-font: Caladea;
+.title-font-style {
+	font-family: @title-font;
+	font-size: 1.5rem;
+	padding-bottom: 2%;
+}
 
 header {
 	width: 100%;
@@ -138,9 +143,7 @@ header {
 		width: 45%;
 		line-height: 1.5rem;
 		h3 {
-			font-family: @title-font;
-			font-size: 1.5rem;
-			padding-bottom: 2%;
+			.title-font-style();
 		}
 	}
 	.skills {
@@ -150,9 +153,7 @@ header {
 		flex-direction: column;
 		// align-items: flex-end;
 		span {
-			font-family: @title-font;
-			font-size: 1.5rem;
-			padding-bottom: 2%;
+			.title-font-style();
 		}
 	}
 	table {
@@ -173,23 +174,34 @@ header {
 	padding: 2%;
 	font-family: @resume-font;
 	span {
-		font-family: @title-font;
-		font-size: 1.5rem;
-		padding-bottom: 2%;
+		.title-font-style();
 	}
 	table {
 		font-size: .90rem;
 		border: 1px solid grey;
 		text-align: center;
 		th {
-			border: 1px solid grey;
+			border: 1px solid darkgrey;
 			font-weight: bold;
 			padding: 1%;
 		}
 		td {
-			border: 1px solid grey;
+			border: 1px solid darkgrey;
 			padding: 1%;
 		}
 	}
+}
+
+footer {
+	border: 1px solid darkgrey;
+	display: flex;
+	height: 10vh;
+	background-color: darkgrey;
+	color: white;
+	font-family: @resume-font;
+	justify-content: center;
+	margin: 2% 5% 0;
+	padding: 2%;
+	font-size: .75rem;
 }
 
